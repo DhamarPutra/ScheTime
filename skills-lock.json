@@ -1,0 +1,29 @@
+{
+  "version": 1,
+  "skills": {
+    "flutter-apply-architecture-best-practices": {
+      "source": "flutter/skills",
+      "sourceType": "github",
+      "skillPath": "skills/flutter-apply-architecture-best-practices/SKILL.md",
+      "computedHash": "baeb208b1cab90c559677626dbd101b96ba93f803cbed85122abdadeb3283a8b"
+    },
+    "flutter-bloc": {
+      "source": "dhruvanbhalara/skills",
+      "sourceType": "github",
+      "skillPath": "skills/flutter/flutter-bloc/SKILL.md",
+      "computedHash": "ab20a28e9a7e3750ae4b7b97d18c062866ab2517caac58519df8ec11423e59e5"
+    },
+    "flutter-bloc-development": {
+      "source": "abdelhakrazi/flutter-bloc-clean-architecture-skill",
+      "sourceType": "github",
+      "skillPath": "SKILL.md",
+      "computedHash": "8ccbd47b4da6e192c6d49c52c7097ba1fcd06dca5e12fe3eddd43419cecd2354"
+    },
+    "flutter-riverpod-expert": {
+      "source": "juparave/dotfiles",
+      "sourceType": "github",
+      "skillPath": ".claude/skills/flutter-riverpod-expert/SKILL.md",
+      "computedHash": "1b81c426cb1e7d2a369d4e0a08f5eebf7b67a1b342a0d5ec52d641b8536bfdc6"
+    }
+  }
+}
