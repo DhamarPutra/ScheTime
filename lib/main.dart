@@ -4,10 +4,15 @@ import 'data/services/isar_service.dart';
 import 'data/services/notification_service.dart';
 import 'data/services/alarm_service.dart';
 import 'ui/core/app_theme.dart';
-import 'ui/features/todo/views/todo_screen.dart';
-
+import 'ui/features/home/views/main_layout.dart';
+import 'package:timezone/data/latest.dart' as tz;
+import 'package:timezone/timezone.dart' as tz;
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
+  
+  // Initialize timezone globally to Asia/Jakarta (UTC+7)
+  tz.initializeTimeZones();
+  tz.setLocalLocation(tz.getLocation('Asia/Jakarta'));
 
   // Initialize services
   final isarService = IsarService();
@@ -40,7 +45,7 @@ class ScheTimeApp extends StatelessWidget {
       title: 'ScheTime',
       debugShowCheckedModeBanner: false,
       theme: AppTheme.darkTheme,
-      home: const TodoScreen(),
+      home: const MainLayout(),
     );
   }
 }

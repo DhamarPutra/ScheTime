@@ -18,15 +18,16 @@ class AlarmService {
     required DateTime dateTime,
     required String title,
     required String body,
+    String? audioPath,
   }) async {
     final alarmSettings = AlarmSettings(
       id: id,
       dateTime: dateTime,
-      assetAudioPath: 'assets/alarm.mp3', // Need to add an asset
+      assetAudioPath: audioPath ?? 'assets/alarm.mp3',
       loopAudio: true,
       vibrate: true,
       volumeSettings: VolumeSettings.fade(
-        volume: 0.8,
+        volume: 1.0,
         fadeDuration: const Duration(seconds: 3),
         volumeEnforced: true,
       ),

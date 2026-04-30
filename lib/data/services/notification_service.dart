@@ -39,7 +39,7 @@ class NotificationService {
       id: id,
       title: title,
       body: body,
-      scheduledDate: tz.TZDateTime.from(scheduledDate, tz.local),
+      scheduledDate: tz.TZDateTime.from(scheduledDate, tz.getLocation('Asia/Jakarta')),
       notificationDetails: const NotificationDetails(
         android: AndroidNotificationDetails(
           'schetime_reminders',

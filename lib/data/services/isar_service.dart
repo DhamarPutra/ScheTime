@@ -2,6 +2,7 @@ import 'package:isar/isar.dart';
 import 'package:path_provider/path_provider.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';
 import '../models/todo_collection.dart';
+import '../models/reminder_collection.dart';
 
 part 'isar_service.g.dart';
 
@@ -16,7 +17,7 @@ class IsarService {
   Future<void> init() async {
     final dir = await getApplicationDocumentsDirectory();
     _isar = await Isar.open(
-      [TodoCollectionSchema],
+      [TodoCollectionSchema, ReminderCollectionSchema],
       directory: dir.path,
     );
   }
